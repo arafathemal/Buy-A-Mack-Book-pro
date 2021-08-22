@@ -24,18 +24,18 @@
                         It’s here. Our first chip designed specifically for Mac. Packed with an astonishing 16 billion transistors, the Apple M1 system on a chip (SoC) integrates the CPU, GPU, Neural Engine, I/O, and so much more onto a single tiny chip.
                     </p>
                     <div><h5>Memory</h5>
-                        <button class="p-2 border border-gray-200 rounded">8GB Unified memory</button>
-                        <button class="p-2 border border-gray-200 rounded">16GB Unified memory</button></div>
+                        <button id="default-8GB-btn" class="p-2 border border-gray-200 rounded">8GB Unified memory</button>
+                        <button id="16GB-memory-btn" class="p-2 border border-gray-200 rounded">16GB Unified memory</button></div>
                     <div class="mt-4">
                         <h5>Storage</h5>
-                        <button class="p-2 border border-gray-200 rounded">256GB SSD storage</button>
-                        <button class="p-2 border border-gray-200 rounded">512GB SSD storage</button>
-                        <button class="p-2 border border-gray-200 rounded">1TB SSD storage</button>
+                        <button id="storage-256GB-btn" class="p-2 border border-gray-200 rounded">256GB SSD storage</button>
+                        <button id="storage-512GB-btn" class="p-2 border border-gray-200 rounded">512GB SSD storage</button>
+                        <button id="storage-1TB-btn" class="p-2 border border-gray-200 rounded">1TB SSD storage</button>
                     </div>
                     <div class="mt-4">
                         <h5>Choose your delivery option</h5>
-                        <button class="p-2 border border-gray-200 rounded">Friday, Aug 25 FREE Prime Delivery </button>
-                        <button class="p-2 border border-gray-200 rounded">Friday, Aug 21 Delivery Charge 20$</button>
+                        <button id="free-delivery" class="p-2 border border-gray-200 rounded">Friday, Aug 25 FREE Prime Delivery </button>
+                        <button id="delivery-charge" class="p-2 border border-gray-200 rounded">Friday, Aug 21 Delivery Charge 20$</button>
                     </div>
                     <div class="mt-4">
                         <table class="table">
@@ -43,37 +43,37 @@
                             <tbody>
                               <tr>
                                 <th scope="row">Best Price</th>
-                                <td>$1299</td>
+                                <td>$<span id="best-price">1299</span></td>
                               </tr>
                               <tr>
                                 <th scope="row">Extra Memory Cost</th>
-                                <td>$0</td>
+                                <td>$<span id="extra-cost">0</span></td>
                               </tr>
                               <tr>
                                 <th scope="row">Extra Storage Cost</th>
-                                <td>$0</td>
+                                <td>$<span id="storage-value">0</span></td>
                               </tr>
                               <tr>
                                 <th scope="row">Delivery Charge</th>
-                                <td>$0</td>
+                                <td>$<span id="delivery-cost">0</span></td>
                               </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <th scope="row">Total Price</th>
-                                    <td>$1299</td>
+                                    <td>$<span id="total-cost">1299</span></td>
                                   </tr>
                             </tfoot>
                           </table>
                     </div>
                     <div>
                         <p>Add Promo Code</p>
-                        <input class="rounded" type="text" name="" id="">
-                        <button class="btn btn-danger">Apply</button>
+                        <input class="rounded" type="text" name="" id="input-value">
+                        <button id="apply-btn" class="btn btn-danger">Apply</button>
                     </div>
         </section>
         <hr>
-        <h1 class="text-center">Total: $1299</h1>
+        <h1 class="text-center">Total: $<span id="final-cost">1299</span></h1>
     </main>
 
 
